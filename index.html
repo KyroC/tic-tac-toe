@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="startPage">
+            <form>
+                First Player's Name: <input type="text" placeholder="First Player" id="player1"><br>
+                Second player's Name: <input type="text" placeholder="Second Player" id="player2">
+                <button type="button" onclick="game.startButton()">Start Game</button>
+            </form>
+        </div>
+        <div class="board hide">
+            <table>
+                <tr>
+                    <td id="grid-0" onclick="game.playerMove(this.id)">1</td>
+                    <td id="grid-1" onclick="game.playerMove(this.id)">2</td>
+                    <td id="grid-2" onclick="game.playerMove(this.id)">3</td>
+                </tr>
+                <tr>
+                    <td id="grid-3" onclick="game.playerMove(this.id)">4</td>
+                    <td id="grid-4" onclick="game.playerMove(this.id)">5</td>
+                    <td id="grid-5" onclick="game.playerMove(this.id)">6</td>
+                </tr>
+                <tr>
+                    <td id="grid-6" onclick="game.playerMove(this.id)">7</td>
+                    <td id="grid-7" onclick="game.playerMove(this.id)">8</td>
+                    <td id="grid-8" onclick="game.playerMove(this.id)">9</td>
+                </tr>
+            </table>
+            <button onclick="gameBoard.newBoard()">New Board</button>
+        </div>
+    </div>
+    
+</body>
+</html>
